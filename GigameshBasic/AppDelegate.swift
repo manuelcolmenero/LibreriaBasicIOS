@@ -16,6 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Se configura la aplicación en cuanto se ejecuta
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        window?.backgroundColor = UIColor.orange
+        
+        
+        // Se configura el controlador principal
+        let rootVC = UIViewController()
+        window?.rootViewController = rootVC
+        
+        
         return true
     }
 
