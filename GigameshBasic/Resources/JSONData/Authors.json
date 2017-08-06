@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "firstName": "George",
+    "lastname": "Raymond Richard Martin",
+    "alias": "George R. R. Marton",
+    "dateBorn": "1948-09-20",
+    "dateDied": "9999-12-31",
+    "nacionalidad": "Estadounidense",
+    "bio": "George R. R. Martin nació en 1948 en Bayonne (Nueva Jersey, EE.UU.), y en la actualidad reside en Santa Fe (Nuevo México, EE.UU.). Hijo de un estibador de familia humilde, su anhelo por conocer los destinos exóticos de los navíos que veía zarpar de Nueva York fue uno de los motivos que lo impulsaron a escribir fantasía y ciencia ficción. Licenciado en periodismo en 1970, en 1977 publicó su primera novela, Muerte de la luz, libro de culto dentro del género y obra cumbre de la ciencia ficción romántica. Desde 1979 se dedica por completo a la escritura, y de su pluma han surgido títulos como Una canción para Lya o Sueño del Fevre, donde su prosa sugerente y poética aborda temas tan poco usuales en el género como la amistad, la lealtad, el amor o la traición, desde una perspectiva despojada de manierismos pero cargada de sensibilidad. Como antologista cabe destacar su trabajo a cargo de Wild Cards, antología de mundos compartidos con temática de superhéroes, de gran prestigio. A partir de 1986 escribe guiones y colabora en series televisivas como En los límites de la realidad o La bella y la bestia, además de realizar tareas de producción en diversos telefilmes. En 1996 empieza a publicar la serie de fantasía épica Canción de hielo y fuego, éxito de ventas en Estados Unidos y auténtico revulsivo del género fantástico."
+  },
+  {
+    "id": 2,
+    "firstName": "Richard",
+    "lastname": "Burton Matheson",
+    "alias": "Logan Swanson",
+    "dateBorn": "1926-02-20",
+    "dateDied": "2013-06-23",
+    "nacionalidad": "Estadounidense",
+    "bio": "Richard Burton Matheson nació en 1926 en Allendale (Nueva Jersey, EE.UU.) y creció en Brooklyn. Durante la Segunda Guerra Mundial luchó en Europa, donde resultó herido. En 1949 se licenció en periodismo por la Universidad de Misuri. Las dificultades laborales para ejercer su profesión determinaron su dedicación a la narrativa. En 1950 se publicó su primer relato, “Nacido de hombre y mujer”, en The Magazine of Fantasy & Science Fiction; cuatro años después, su primera novela fantástica, Soy leyenda, eludía clichés e incorporaba por primera vez una explicación racional al vampirismo. En 1956 llegó a un acuerdo con la Universal sobre los derechos cinematográficos de El hombre menguante con la condición de hacerse cargo de la adaptación, lo que marcó el comienzo de su carrera en la industria del cine y la televisión. Cabe destacar en este campo los catorce guiones que firmó para La dimensión desconocida, así como las adaptaciones de obras de Edgar Allan Poe para Roger Corman y de su cuento “Duelo” para la ópera prima de Steven Spielberg El diablo sobre ruedas. Residió en Los Ángeles desde 1951, donde falleció en el año 2013. A pesar de haber empezado escribiendo para pulps de ciencia ficción, Matheson fue abandonando los elementos más arquetípicos del género, con que dotaba de verosimilitud los terrores más dispares, para dar mayor relevancia a las características centrales de su obra: la irrupción de lo extraordinario en la realidad, la cotidianidad del miedo y la paranoia, y la angustia vital."
+  }
+]

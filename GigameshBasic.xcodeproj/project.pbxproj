@@ -11,6 +11,11 @@
 		2624B61F1F32647C005B9819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2624B61E1F32647C005B9819 /* Assets.xcassets */; };
 		2624B6221F32647C005B9819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2624B6201F32647C005B9819 /* LaunchScreen.storyboard */; };
 		2624B62D1F32647C005B9819 /* GigameshBasicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2624B62C1F32647C005B9819 /* GigameshBasicTests.swift */; };
+		26BFA9C11F37897E009EA30E /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BFA9C01F37897E009EA30E /* Author.swift */; };
+		26BFA9C31F378DF0009EA30E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BFA9C21F378DF0009EA30E /* Book.swift */; };
+		26E314EE1F36418500C9C3CF /* el-caballero-de-los-siete-reinos-67.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26E314EA1F36418500C9C3CF /* el-caballero-de-los-siete-reinos-67.jpg */; };
+		26E314EF1F36418500C9C3CF /* Authors.json in Resources */ = {isa = PBXBuildFile; fileRef = 26E314EC1F36418500C9C3CF /* Authors.json */; };
+		26E314F01F36418500C9C3CF /* Books.json in Resources */ = {isa = PBXBuildFile; fileRef = 26E314ED1F36418500C9C3CF /* Books.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +37,12 @@
 		2624B6281F32647C005B9819 /* GigameshBasicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GigameshBasicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2624B62C1F32647C005B9819 /* GigameshBasicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigameshBasicTests.swift; sourceTree = "<group>"; };
 		2624B62E1F32647C005B9819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26BFA9C01F37897E009EA30E /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Author.swift; path = Models/Author.swift; sourceTree = "<group>"; };
+		26BFA9C21F378DF0009EA30E /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Book.swift; path = Models/Book.swift; sourceTree = "<group>"; };
+		26E314E31F36414700C9C3CF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		26E314EA1F36418500C9C3CF /* el-caballero-de-los-siete-reinos-67.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "el-caballero-de-los-siete-reinos-67.jpg"; sourceTree = "<group>"; };
+		26E314EC1F36418500C9C3CF /* Authors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Authors.json; sourceTree = "<group>"; };
+		26E314ED1F36418500C9C3CF /* Books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Books.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +84,12 @@
 		2624B6161F32647C005B9819 /* GigameshBasic */ = {
 			isa = PBXGroup;
 			children = (
-				2624B6371F3264A3005B9819 /* SystemFile */,
 				2624B6171F32647C005B9819 /* AppDelegate.swift */,
+				2624B6391F3268DC005B9819 /* Controllers */,
+				2624B6381F3268D2005B9819 /* Models */,
+				2624B63A1F326925005B9819 /* Repository */,
+				26E314E61F36418500C9C3CF /* Resources */,
+				2624B6371F3264A3005B9819 /* SystemFile */,
 			);
 			path = GigameshBasic;
 			sourceTree = "<group>";
@@ -96,6 +111,71 @@
 				2624B6231F32647C005B9819 /* Info.plist */,
 			);
 			name = SystemFile;
+			sourceTree = "<group>";
+		};
+		2624B6381F3268D2005B9819 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26BFA9C01F37897E009EA30E /* Author.swift */,
+				26BFA9C21F378DF0009EA30E /* Book.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2624B6391F3268DC005B9819 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2624B63A1F326925005B9819 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		26E314E61F36418500C9C3CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				26E314E71F36418500C9C3CF /* Authors */,
+				26E314E81F36418500C9C3CF /* Company */,
+				26E314E91F36418500C9C3CF /* Covers */,
+				26E314EB1F36418500C9C3CF /* JSONData */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		26E314E71F36418500C9C3CF /* Authors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authors;
+			sourceTree = "<group>";
+		};
+		26E314E81F36418500C9C3CF /* Company */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Company;
+			sourceTree = "<group>";
+		};
+		26E314E91F36418500C9C3CF /* Covers */ = {
+			isa = PBXGroup;
+			children = (
+				26E314EA1F36418500C9C3CF /* el-caballero-de-los-siete-reinos-67.jpg */,
+			);
+			path = Covers;
+			sourceTree = "<group>";
+		};
+		26E314EB1F36418500C9C3CF /* JSONData */ = {
+			isa = PBXGroup;
+			children = (
+				26E314EC1F36418500C9C3CF /* Authors.json */,
+				26E314ED1F36418500C9C3CF /* Books.json */,
+			);
+			path = JSONData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +262,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2624B6221F32647C005B9819 /* LaunchScreen.storyboard in Resources */,
+				26E314EE1F36418500C9C3CF /* el-caballero-de-los-siete-reinos-67.jpg in Resources */,
+				26E314EF1F36418500C9C3CF /* Authors.json in Resources */,
+				26E314F01F36418500C9C3CF /* Books.json in Resources */,
 				2624B61F1F32647C005B9819 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26BFA9C11F37897E009EA30E /* Author.swift in Sources */,
 				2624B6181F32647C005B9819 /* AppDelegate.swift in Sources */,
+				26BFA9C31F378DF0009EA30E /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +312,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2624B6211F32647C005B9819 /* Base */,
+				26E314E31F36414700C9C3CF /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -238,6 +324,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -289,6 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -400,6 +488,7 @@
 				2624B6331F32647C005B9819 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2624B6341F32647C005B9819 /* Build configuration list for PBXNativeTarget "GigameshBasicTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +497,7 @@
 				2624B6361F32647C005B9819 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
