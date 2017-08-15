@@ -22,6 +22,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.backgroundColor = UIColor.orange
         
+        // Se crean los modelos desde el repositorio
+        let authors = Repository.local.authors
+        let books   = Repository.local.books
+        
+        
+        // Se verifica en que tipo de dispositivo se está ejecutando la aplicación
+        
+        if UIDevice.current.userInterfaceIdiom == .pad{
+            // Es un iPad
+            
+        } else {
+            // Es un iPhone
+            
+            
+        }
+        
         
         // Se configura el controlador principal
         let rootVC = UIViewController()

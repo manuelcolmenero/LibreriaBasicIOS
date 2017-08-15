@@ -10,9 +10,16 @@
 		2624B6181F32647C005B9819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2624B6171F32647C005B9819 /* AppDelegate.swift */; };
 		2624B61F1F32647C005B9819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2624B61E1F32647C005B9819 /* Assets.xcassets */; };
 		2624B6221F32647C005B9819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2624B6201F32647C005B9819 /* LaunchScreen.storyboard */; };
-		2624B62D1F32647C005B9819 /* GigameshBasicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2624B62C1F32647C005B9819 /* GigameshBasicTests.swift */; };
+		264A70571F3CBFBF00016D05 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A70561F3CBFBF00016D05 /* UIKitExtensions.swift */; };
+		264A70591F3CBFDC00016D05 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A70581F3CBFDC00016D05 /* DateExtensions.swift */; };
+		264A705B1F3CEAEF00016D05 /* ModelTestBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A705A1F3CEAEF00016D05 /* ModelTestBook.swift */; };
+		264A705D1F3CEDC300016D05 /* RepositoryTestLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A705C1F3CEDC300016D05 /* RepositoryTestLocal.swift */; };
+		2678DDEC1F40C7AD0061D925 /* BookFirstCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678DDEA1F40C7AD0061D925 /* BookFirstCustomTableViewCell.swift */; };
+		2678DDED1F40C7AD0061D925 /* BookFirstCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2678DDEB1F40C7AD0061D925 /* BookFirstCustomTableViewCell.xib */; };
 		26BFA9C11F37897E009EA30E /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BFA9C01F37897E009EA30E /* Author.swift */; };
 		26BFA9C31F378DF0009EA30E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BFA9C21F378DF0009EA30E /* Book.swift */; };
+		26BFA9C51F379817009EA30E /* ModelTestAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BFA9C41F379817009EA30E /* ModelTestAuthor.swift */; };
+		26BFA9C71F3799EC009EA30E /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BFA9C61F3799EC009EA30E /* Repository.swift */; };
 		26E314EE1F36418500C9C3CF /* el-caballero-de-los-siete-reinos-67.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26E314EA1F36418500C9C3CF /* el-caballero-de-los-siete-reinos-67.jpg */; };
 		26E314EF1F36418500C9C3CF /* Authors.json in Resources */ = {isa = PBXBuildFile; fileRef = 26E314EC1F36418500C9C3CF /* Authors.json */; };
 		26E314F01F36418500C9C3CF /* Books.json in Resources */ = {isa = PBXBuildFile; fileRef = 26E314ED1F36418500C9C3CF /* Books.json */; };
@@ -35,10 +42,17 @@
 		2624B6211F32647C005B9819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2624B6231F32647C005B9819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2624B6281F32647C005B9819 /* GigameshBasicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GigameshBasicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2624B62C1F32647C005B9819 /* GigameshBasicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigameshBasicTests.swift; sourceTree = "<group>"; };
 		2624B62E1F32647C005B9819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		264A70561F3CBFBF00016D05 /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		264A70581F3CBFDC00016D05 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		264A705A1F3CEAEF00016D05 /* ModelTestBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTestBook.swift; sourceTree = "<group>"; };
+		264A705C1F3CEDC300016D05 /* RepositoryTestLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTestLocal.swift; sourceTree = "<group>"; };
+		2678DDEA1F40C7AD0061D925 /* BookFirstCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookFirstCustomTableViewCell.swift; path = Controllers/CustomViewCells/Books/BookFirstCustomTableViewCell.swift; sourceTree = "<group>"; };
+		2678DDEB1F40C7AD0061D925 /* BookFirstCustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BookFirstCustomTableViewCell.xib; path = Controllers/CustomViewCells/Books/BookFirstCustomTableViewCell.xib; sourceTree = "<group>"; };
 		26BFA9C01F37897E009EA30E /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Author.swift; path = Models/Author.swift; sourceTree = "<group>"; };
 		26BFA9C21F378DF0009EA30E /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Book.swift; path = Models/Book.swift; sourceTree = "<group>"; };
+		26BFA9C41F379817009EA30E /* ModelTestAuthor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTestAuthor.swift; sourceTree = "<group>"; };
+		26BFA9C61F3799EC009EA30E /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Repository.swift; path = Repository/Repository.swift; sourceTree = "<group>"; };
 		26E314E31F36414700C9C3CF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		26E314EA1F36418500C9C3CF /* el-caballero-de-los-siete-reinos-67.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "el-caballero-de-los-siete-reinos-67.jpg"; sourceTree = "<group>"; };
 		26E314EC1F36418500C9C3CF /* Authors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Authors.json; sourceTree = "<group>"; };
@@ -85,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				2624B6171F32647C005B9819 /* AppDelegate.swift */,
+				264A70551F3CBF9E00016D05 /* CocoaExtensions */,
+				264A70611F3CF37700016D05 /* Configuration */,
 				2624B6391F3268DC005B9819 /* Controllers */,
 				2624B6381F3268D2005B9819 /* Models */,
 				2624B63A1F326925005B9819 /* Repository */,
@@ -97,8 +113,10 @@
 		2624B62B1F32647C005B9819 /* GigameshBasicTests */ = {
 			isa = PBXGroup;
 			children = (
-				2624B62C1F32647C005B9819 /* GigameshBasicTests.swift */,
 				2624B62E1F32647C005B9819 /* Info.plist */,
+				26BFA9C41F379817009EA30E /* ModelTestAuthor.swift */,
+				264A705A1F3CEAEF00016D05 /* ModelTestBook.swift */,
+				264A705C1F3CEDC300016D05 /* RepositoryTestLocal.swift */,
 			);
 			path = GigameshBasicTests;
 			sourceTree = "<group>";
@@ -125,6 +143,9 @@
 		2624B6391F3268DC005B9819 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				264A70601F3CF34700016D05 /* CustomViewCells */,
+				264A705F1F3CF33B00016D05 /* NotGenerics */,
+				264A705E1F3CF32000016D05 /* IsGenerics */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -132,8 +153,80 @@
 		2624B63A1F326925005B9819 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				26BFA9C61F3799EC009EA30E /* Repository.swift */,
 			);
 			name = Repository;
+			sourceTree = "<group>";
+		};
+		264A70551F3CBF9E00016D05 /* CocoaExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				264A70581F3CBFDC00016D05 /* DateExtensions.swift */,
+				264A70561F3CBFBF00016D05 /* UIKitExtensions.swift */,
+			);
+			name = CocoaExtensions;
+			sourceTree = "<group>";
+		};
+		264A705E1F3CF32000016D05 /* IsGenerics */ = {
+			isa = PBXGroup;
+			children = (
+				26CD85181F43569C00A9541A /* DataSources */,
+				26CD85171F43569600A9541A /* Delegates */,
+			);
+			name = IsGenerics;
+			sourceTree = "<group>";
+		};
+		264A705F1F3CF33B00016D05 /* NotGenerics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NotGenerics;
+			sourceTree = "<group>";
+		};
+		264A70601F3CF34700016D05 /* CustomViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				2678DDF01F40C7CB0061D925 /* Author */,
+				2678DDEF1F40C7BD0061D925 /* Book */,
+			);
+			name = CustomViewCells;
+			sourceTree = "<group>";
+		};
+		264A70611F3CF37700016D05 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		2678DDEF1F40C7BD0061D925 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				2678DDEA1F40C7AD0061D925 /* BookFirstCustomTableViewCell.swift */,
+				2678DDEB1F40C7AD0061D925 /* BookFirstCustomTableViewCell.xib */,
+			);
+			name = Book;
+			sourceTree = "<group>";
+		};
+		2678DDF01F40C7CB0061D925 /* Author */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Author;
+			sourceTree = "<group>";
+		};
+		26CD85171F43569600A9541A /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		26CD85181F43569C00A9541A /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataSources;
 			sourceTree = "<group>";
 		};
 		26E314E61F36418500C9C3CF /* Resources */ = {
@@ -232,6 +325,7 @@
 					};
 					2624B6271F32647C005B9819 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2624B6131F32647C005B9819;
 					};
@@ -265,6 +359,7 @@
 				26E314EE1F36418500C9C3CF /* el-caballero-de-los-siete-reinos-67.jpg in Resources */,
 				26E314EF1F36418500C9C3CF /* Authors.json in Resources */,
 				26E314F01F36418500C9C3CF /* Books.json in Resources */,
+				2678DDED1F40C7AD0061D925 /* BookFirstCustomTableViewCell.xib in Resources */,
 				2624B61F1F32647C005B9819 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +381,10 @@
 				26BFA9C11F37897E009EA30E /* Author.swift in Sources */,
 				2624B6181F32647C005B9819 /* AppDelegate.swift in Sources */,
 				26BFA9C31F378DF0009EA30E /* Book.swift in Sources */,
+				26BFA9C71F3799EC009EA30E /* Repository.swift in Sources */,
+				2678DDEC1F40C7AD0061D925 /* BookFirstCustomTableViewCell.swift in Sources */,
+				264A70571F3CBFBF00016D05 /* UIKitExtensions.swift in Sources */,
+				264A70591F3CBFDC00016D05 /* DateExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +392,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2624B62D1F32647C005B9819 /* GigameshBasicTests.swift in Sources */,
+				264A705D1F3CEDC300016D05 /* RepositoryTestLocal.swift in Sources */,
+				264A705B1F3CEAEF00016D05 /* ModelTestBook.swift in Sources */,
+				26BFA9C51F379817009EA30E /* ModelTestAuthor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,10 +547,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GigameshBasicTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mclasha.GigameshBasicTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GigameshBasic.app/GigameshBasic";
 			};
@@ -460,6 +563,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GigameshBasicTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mclasha.GigameshBasicTests;

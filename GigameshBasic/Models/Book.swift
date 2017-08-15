@@ -28,7 +28,7 @@ final class Book {
     let idiom           : String
     let ISBN10          : String
     let ISBN13          : String
-    let photo           : Cover
+    let cover           : Cover
     let description     : String
     
     
@@ -43,7 +43,7 @@ final class Book {
          idiom           : String,
          ISBN10          : String,
          ISBN13          : String,
-         photo           : Cover,
+         cover           : Cover,
          description     : String) {
         self.name            = name
         self.originalName    = originalName
@@ -55,7 +55,7 @@ final class Book {
         self.idiom           = idiom
         self.ISBN10          = ISBN10
         self.ISBN13          = ISBN13
-        self.photo           = photo
+        self.cover           = cover
         self.description     = description
     }
 }
