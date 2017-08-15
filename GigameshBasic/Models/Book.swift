@@ -18,8 +18,8 @@ typealias Authors    = Author
 // MARK: - Clases
 final class Book {
     
-    let name            : String
-    let originalName    : String
+    let title           : String
+    let originalTitle    : String
     let authors         : Authors
     let format          : String
     let pages           : Int
@@ -33,8 +33,8 @@ final class Book {
     
     
     
-    init(name            : String,
-         originalName    : String,
+    init(title           : String,
+         originalTitle   : String,
          authors         : Authors,
          format          : String,
          pages           : Int,
@@ -45,8 +45,8 @@ final class Book {
          ISBN13          : String,
          cover           : Cover,
          description     : String) {
-        self.name            = name
-        self.originalName    = originalName
+        self.title           = title
+        self.originalTitle   = originalTitle
         self.authors         = authors
         self.format          = format
         self.pages           = pages
@@ -78,7 +78,7 @@ extension Book {
     // Variable para igualdad de objetos
     var proxyForEquality: String {
         get {
-            return "\(self.name) \(self.collection)"
+            return "\(self.title) \(self.collection)"
         }
     }
     
@@ -86,7 +86,7 @@ extension Book {
     // Variable para ordenar objetos
     var proxyForComparison: String {
         get {
-            return "\(self.name.uppercased()))"
+            return "\(self.title.uppercased()))"
         }
     }
 }

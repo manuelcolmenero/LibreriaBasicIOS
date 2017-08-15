@@ -20,6 +20,9 @@
 		26BFA9C31F378DF0009EA30E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BFA9C21F378DF0009EA30E /* Book.swift */; };
 		26BFA9C51F379817009EA30E /* ModelTestAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BFA9C41F379817009EA30E /* ModelTestAuthor.swift */; };
 		26BFA9C71F3799EC009EA30E /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BFA9C61F3799EC009EA30E /* Repository.swift */; };
+		26CD85351F436B0000A9541A /* BookSecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CD85331F436B0000A9541A /* BookSecondTableViewCell.swift */; };
+		26CD85361F436B0000A9541A /* BookSecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26CD85341F436B0000A9541A /* BookSecondTableViewCell.xib */; };
+		26CD853A1F436BDB00A9541A /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CD85391F436BDB00A9541A /* BookTableViewController.swift */; };
 		26E314EE1F36418500C9C3CF /* el-caballero-de-los-siete-reinos-67.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26E314EA1F36418500C9C3CF /* el-caballero-de-los-siete-reinos-67.jpg */; };
 		26E314EF1F36418500C9C3CF /* Authors.json in Resources */ = {isa = PBXBuildFile; fileRef = 26E314EC1F36418500C9C3CF /* Authors.json */; };
 		26E314F01F36418500C9C3CF /* Books.json in Resources */ = {isa = PBXBuildFile; fileRef = 26E314ED1F36418500C9C3CF /* Books.json */; };
@@ -53,6 +56,9 @@
 		26BFA9C21F378DF0009EA30E /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Book.swift; path = Models/Book.swift; sourceTree = "<group>"; };
 		26BFA9C41F379817009EA30E /* ModelTestAuthor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTestAuthor.swift; sourceTree = "<group>"; };
 		26BFA9C61F3799EC009EA30E /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Repository.swift; path = Repository/Repository.swift; sourceTree = "<group>"; };
+		26CD85331F436B0000A9541A /* BookSecondTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookSecondTableViewCell.swift; path = Controllers/CustomViewCells/Books/BookSecondTableViewCell.swift; sourceTree = "<group>"; };
+		26CD85341F436B0000A9541A /* BookSecondTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BookSecondTableViewCell.xib; path = Controllers/CustomViewCells/Books/BookSecondTableViewCell.xib; sourceTree = "<group>"; };
+		26CD85391F436BDB00A9541A /* BookTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookTableViewController.swift; path = Controllers/NotGenerics/BookTableViewController.swift; sourceTree = "<group>"; };
 		26E314E31F36414700C9C3CF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		26E314EA1F36418500C9C3CF /* el-caballero-de-los-siete-reinos-67.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "el-caballero-de-los-siete-reinos-67.jpg"; sourceTree = "<group>"; };
 		26E314EC1F36418500C9C3CF /* Authors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Authors.json; sourceTree = "<group>"; };
@@ -179,6 +185,7 @@
 		264A705F1F3CF33B00016D05 /* NotGenerics */ = {
 			isa = PBXGroup;
 			children = (
+				26CD85391F436BDB00A9541A /* BookTableViewController.swift */,
 			);
 			name = NotGenerics;
 			sourceTree = "<group>";
@@ -204,6 +211,8 @@
 			children = (
 				2678DDEA1F40C7AD0061D925 /* BookFirstCustomTableViewCell.swift */,
 				2678DDEB1F40C7AD0061D925 /* BookFirstCustomTableViewCell.xib */,
+				26CD85331F436B0000A9541A /* BookSecondTableViewCell.swift */,
+				26CD85341F436B0000A9541A /* BookSecondTableViewCell.xib */,
 			);
 			name = Book;
 			sourceTree = "<group>";
@@ -359,6 +368,7 @@
 				26E314EE1F36418500C9C3CF /* el-caballero-de-los-siete-reinos-67.jpg in Resources */,
 				26E314EF1F36418500C9C3CF /* Authors.json in Resources */,
 				26E314F01F36418500C9C3CF /* Books.json in Resources */,
+				26CD85361F436B0000A9541A /* BookSecondTableViewCell.xib in Resources */,
 				2678DDED1F40C7AD0061D925 /* BookFirstCustomTableViewCell.xib in Resources */,
 				2624B61F1F32647C005B9819 /* Assets.xcassets in Resources */,
 			);
@@ -380,7 +390,9 @@
 			files = (
 				26BFA9C11F37897E009EA30E /* Author.swift in Sources */,
 				2624B6181F32647C005B9819 /* AppDelegate.swift in Sources */,
+				26CD85351F436B0000A9541A /* BookSecondTableViewCell.swift in Sources */,
 				26BFA9C31F378DF0009EA30E /* Book.swift in Sources */,
+				26CD853A1F436BDB00A9541A /* BookTableViewController.swift in Sources */,
 				26BFA9C71F3799EC009EA30E /* Repository.swift in Sources */,
 				2678DDEC1F40C7AD0061D925 /* BookFirstCustomTableViewCell.swift in Sources */,
 				264A70571F3CBFBF00016D05 /* UIKitExtensions.swift in Sources */,

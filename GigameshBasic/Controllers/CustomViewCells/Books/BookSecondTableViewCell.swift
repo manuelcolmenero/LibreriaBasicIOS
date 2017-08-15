@@ -1,18 +1,16 @@
 //
-//  BookFirstCustomTableViewCell.swift
+//  BookSecondTableViewCell.swift
 //  GigameshBasic
 //
-//  Created by Manuel Colmenero Navarro on 13/8/17.
+//  Created by Manuel Colmenero Navarro on 15/8/17.
 //  Copyright © 2017 Manuel Colmenero Navarro. All rights reserved.
 //
 
 import UIKit
 
-class BookFirstCustomTableViewCell: UITableViewCell {
-    
+class BookSecondTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var coverImage: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var pageLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,6 +22,5 @@ class BookFirstCustomTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
     
 }

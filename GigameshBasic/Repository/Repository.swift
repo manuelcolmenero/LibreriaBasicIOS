@@ -102,8 +102,8 @@ final class LocalFactory : AuthorFactory {
             
             // Se crean los Books
             
-            let caballero7Reinos = Book(name: "El caballero de los siete reinos",
-                                        originalName: "A Knight of the Seven Kingdoms",
+            let caballero7Reinos = Book(title: "El caballero de los siete reinos",
+                                        originalTitle: "A Knight of the Seven Kingdoms",
                                         authors: authorGRRMartin!,
                                         format: "Tapa blanda",
                                         pages: 288,
@@ -121,7 +121,7 @@ final class LocalFactory : AuthorFactory {
     
     // MARK: - Funtions - Books
     func book(named: String) -> Book? {
-        let book = books.filter{$0.name.uppercased() == named.uppercased()}.first
+        let book = books.filter{$0.title.uppercased() == named.uppercased()}.first
         return book
     }
     

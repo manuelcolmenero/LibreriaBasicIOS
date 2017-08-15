@@ -26,6 +26,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let authors = Repository.local.authors
         let books   = Repository.local.books
         
+        // Se crean los controladores
+        var controllers = [UIViewController]()
+        for book in books {
+            controllers.append(BookTableViewController(model: book).wrappedInNavigation())
+        }
+        
+        // Se crea el UITabBarController
+        let tabVC = UITabBarController()
+        tabVC.viewControllers = controllers
+        
         
         // Se verifica en que tipo de dispositivo se está ejecutando la aplicación
         
@@ -38,10 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }
         
-        
-        // Se configura el controlador principal
-        let rootVC = UIViewController()
-        window?.rootViewController = rootVC
+        window?.rootViewController = tabVC
         
         
         return true
