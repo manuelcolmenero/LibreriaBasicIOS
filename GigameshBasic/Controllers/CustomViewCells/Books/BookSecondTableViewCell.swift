@@ -10,7 +10,7 @@ import UIKit
 
 class BookSecondTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var pageLabel: UILabel!
+    @IBOutlet weak var infoLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

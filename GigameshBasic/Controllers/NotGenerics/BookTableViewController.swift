@@ -13,11 +13,14 @@ class BookTableViewController: UITableViewController {
     // Propiedad para el modelo
     let model : Book
     
+    // Se crea el identificador de celda
+    let cellID = "BookCell"
+    
     
     init (model: Book) {
         self.model  = model
         super.init(nibName: nil, bundle: nil)
-        title = "Detalle"
+        title = model.title
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -38,8 +41,6 @@ class BookTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // Se crea el identificador de celda
-        let cellID = "BookCell"
         
         // Se averiguar cual es el objeto House que se ha de mostrar
         let book = model
@@ -54,11 +55,15 @@ class BookTableViewController: UITableViewController {
         
         // Sincronizar House -> Cell
         cell?.coverImage?.image = book.cover.image
-        cell?.titleLabel?.text  = book.title
-        
         
         return cell!
         
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let nib = UINib(nibName: "BookFirstCustomTableViewCell", bundle: nil)
+        
+        tableView.register(nib, forCellReuseIdentifier: cellID)
     }
     
 }

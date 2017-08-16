@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = UIColor.orange
         
         // Se crean los modelos desde el repositorio
-        let authors = Repository.local.authors
+//        let authors = Repository.local.authors
         let books   = Repository.local.books
         
         // Se crean los controladores
