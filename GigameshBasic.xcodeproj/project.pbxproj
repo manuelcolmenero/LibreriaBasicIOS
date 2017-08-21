@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		261C1D4B1F45FD7800EB1A21 /* BookSecondCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261C1D491F45FD7800EB1A21 /* BookSecondCustomTableViewCell.swift */; };
+		261C1D4C1F45FD7800EB1A21 /* BookSecondCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 261C1D4A1F45FD7800EB1A21 /* BookSecondCustomTableViewCell.xib */; };
 		2624B6181F32647C005B9819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2624B6171F32647C005B9819 /* AppDelegate.swift */; };
 		2624B61F1F32647C005B9819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2624B61E1F32647C005B9819 /* Assets.xcassets */; };
 		2624B6221F32647C005B9819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2624B6201F32647C005B9819 /* LaunchScreen.storyboard */; };
@@ -14,14 +16,27 @@
 		264A70591F3CBFDC00016D05 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A70581F3CBFDC00016D05 /* DateExtensions.swift */; };
 		264A705B1F3CEAEF00016D05 /* ModelTestBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A705A1F3CEAEF00016D05 /* ModelTestBook.swift */; };
 		264A705D1F3CEDC300016D05 /* RepositoryTestLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A705C1F3CEDC300016D05 /* RepositoryTestLocal.swift */; };
+		26786B081F49F28000904815 /* ListCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26786B061F49F28000904815 /* ListCustomTableViewCell.swift */; };
+		26786B091F49F28000904815 /* ListCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26786B071F49F28000904815 /* ListCustomTableViewCell.xib */; };
+		26786B0F1F49F51E00904815 /* BookListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26786B0E1F49F51E00904815 /* BookListTableViewController.swift */; };
+		26786B131F4A00CC00904815 /* juego-de-tronos-28.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26786B121F4A00CC00904815 /* juego-de-tronos-28.jpg */; };
 		2678DDEC1F40C7AD0061D925 /* BookFirstCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2678DDEA1F40C7AD0061D925 /* BookFirstCustomTableViewCell.swift */; };
 		2678DDED1F40C7AD0061D925 /* BookFirstCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2678DDEB1F40C7AD0061D925 /* BookFirstCustomTableViewCell.xib */; };
+		2680A2F01F4AEB17006F8EF1 /* AuthorListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2680A2EF1F4AEB17006F8EF1 /* AuthorListTableViewController.swift */; };
+		2680A2F31F4AED9B006F8EF1 /* George_RR_Martin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2680A2F11F4AED9B006F8EF1 /* George_RR_Martin.jpg */; };
+		2680A2F41F4AED9B006F8EF1 /* Richard_Matheson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2680A2F21F4AED9B006F8EF1 /* Richard_Matheson.jpg */; };
+		2680A2F81F4AEF7D006F8EF1 /* AuthorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2680A2F71F4AEF7D006F8EF1 /* AuthorTableViewController.swift */; };
+		2680A2FC1F4AF567006F8EF1 /* bookIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2680A2F91F4AF567006F8EF1 /* bookIcon.png */; };
+		2680A2FD1F4AF567006F8EF1 /* logo_gigamesh.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2680A2FA1F4AF567006F8EF1 /* logo_gigamesh.gif */; };
+		2680A2FE1F4AF567006F8EF1 /* noAuthorPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2680A2FB1F4AF567006F8EF1 /* noAuthorPhoto.jpg */; };
+		2680A3011F4AF6EA006F8EF1 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2680A2FF1F4AF6EA006F8EF1 /* StartViewController.swift */; };
+		2680A3021F4AF6EA006F8EF1 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2680A3001F4AF6EA006F8EF1 /* StartViewController.xib */; };
+		26AECB171F4ACA0600A3CCBA /* DescCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AECB151F4ACA0600A3CCBA /* DescCustomTableViewCell.swift */; };
+		26AECB181F4ACA0600A3CCBA /* DescCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26AECB161F4ACA0600A3CCBA /* DescCustomTableViewCell.xib */; };
 		26BFA9C11F37897E009EA30E /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BFA9C01F37897E009EA30E /* Author.swift */; };
 		26BFA9C31F378DF0009EA30E /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BFA9C21F378DF0009EA30E /* Book.swift */; };
 		26BFA9C51F379817009EA30E /* ModelTestAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BFA9C41F379817009EA30E /* ModelTestAuthor.swift */; };
 		26BFA9C71F3799EC009EA30E /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BFA9C61F3799EC009EA30E /* Repository.swift */; };
-		26CD85351F436B0000A9541A /* BookSecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CD85331F436B0000A9541A /* BookSecondTableViewCell.swift */; };
-		26CD85361F436B0000A9541A /* BookSecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26CD85341F436B0000A9541A /* BookSecondTableViewCell.xib */; };
 		26CD853A1F436BDB00A9541A /* BookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CD85391F436BDB00A9541A /* BookTableViewController.swift */; };
 		26E314EE1F36418500C9C3CF /* el-caballero-de-los-siete-reinos-67.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26E314EA1F36418500C9C3CF /* el-caballero-de-los-siete-reinos-67.jpg */; };
 		26E314EF1F36418500C9C3CF /* Authors.json in Resources */ = {isa = PBXBuildFile; fileRef = 26E314EC1F36418500C9C3CF /* Authors.json */; };
@@ -39,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		261C1D491F45FD7800EB1A21 /* BookSecondCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookSecondCustomTableViewCell.swift; path = Controllers/CustomViewCells/Books/BookSecondCustomTableViewCell.swift; sourceTree = "<group>"; };
+		261C1D4A1F45FD7800EB1A21 /* BookSecondCustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BookSecondCustomTableViewCell.xib; path = Controllers/CustomViewCells/Books/BookSecondCustomTableViewCell.xib; sourceTree = "<group>"; };
 		2624B6141F32647C005B9819 /* GigameshBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GigameshBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2624B6171F32647C005B9819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2624B61E1F32647C005B9819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,14 +67,27 @@
 		264A70581F3CBFDC00016D05 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		264A705A1F3CEAEF00016D05 /* ModelTestBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTestBook.swift; sourceTree = "<group>"; };
 		264A705C1F3CEDC300016D05 /* RepositoryTestLocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTestLocal.swift; sourceTree = "<group>"; };
+		26786B061F49F28000904815 /* ListCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListCustomTableViewCell.swift; path = Controllers/CustomViewCells/ListCustomTableViewCell.swift; sourceTree = "<group>"; };
+		26786B071F49F28000904815 /* ListCustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ListCustomTableViewCell.xib; path = Controllers/CustomViewCells/ListCustomTableViewCell.xib; sourceTree = "<group>"; };
+		26786B0E1F49F51E00904815 /* BookListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookListTableViewController.swift; path = Controllers/NotGenerics/BookListTableViewController.swift; sourceTree = "<group>"; };
+		26786B121F4A00CC00904815 /* juego-de-tronos-28.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "juego-de-tronos-28.jpg"; sourceTree = "<group>"; };
 		2678DDEA1F40C7AD0061D925 /* BookFirstCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookFirstCustomTableViewCell.swift; path = Controllers/CustomViewCells/Books/BookFirstCustomTableViewCell.swift; sourceTree = "<group>"; };
 		2678DDEB1F40C7AD0061D925 /* BookFirstCustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BookFirstCustomTableViewCell.xib; path = Controllers/CustomViewCells/Books/BookFirstCustomTableViewCell.xib; sourceTree = "<group>"; };
+		2680A2EF1F4AEB17006F8EF1 /* AuthorListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthorListTableViewController.swift; path = Controllers/NotGenerics/AuthorListTableViewController.swift; sourceTree = "<group>"; };
+		2680A2F11F4AED9B006F8EF1 /* George_RR_Martin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = George_RR_Martin.jpg; sourceTree = "<group>"; };
+		2680A2F21F4AED9B006F8EF1 /* Richard_Matheson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Richard_Matheson.jpg; sourceTree = "<group>"; };
+		2680A2F71F4AEF7D006F8EF1 /* AuthorTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthorTableViewController.swift; path = Controllers/NotGenerics/AuthorTableViewController.swift; sourceTree = "<group>"; };
+		2680A2F91F4AF567006F8EF1 /* bookIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookIcon.png; sourceTree = "<group>"; };
+		2680A2FA1F4AF567006F8EF1 /* logo_gigamesh.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo_gigamesh.gif; sourceTree = "<group>"; };
+		2680A2FB1F4AF567006F8EF1 /* noAuthorPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = noAuthorPhoto.jpg; sourceTree = "<group>"; };
+		2680A2FF1F4AF6EA006F8EF1 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartViewController.swift; path = Controllers/NotGenerics/StartViewController.swift; sourceTree = "<group>"; };
+		2680A3001F4AF6EA006F8EF1 /* StartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StartViewController.xib; path = Controllers/NotGenerics/StartViewController.xib; sourceTree = "<group>"; };
+		26AECB151F4ACA0600A3CCBA /* DescCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DescCustomTableViewCell.swift; path = Controllers/CustomViewCells/DescCustomTableViewCell.swift; sourceTree = "<group>"; };
+		26AECB161F4ACA0600A3CCBA /* DescCustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DescCustomTableViewCell.xib; path = Controllers/CustomViewCells/DescCustomTableViewCell.xib; sourceTree = "<group>"; };
 		26BFA9C01F37897E009EA30E /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Author.swift; path = Models/Author.swift; sourceTree = "<group>"; };
 		26BFA9C21F378DF0009EA30E /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Book.swift; path = Models/Book.swift; sourceTree = "<group>"; };
 		26BFA9C41F379817009EA30E /* ModelTestAuthor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTestAuthor.swift; sourceTree = "<group>"; };
 		26BFA9C61F3799EC009EA30E /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Repository.swift; path = Repository/Repository.swift; sourceTree = "<group>"; };
-		26CD85331F436B0000A9541A /* BookSecondTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookSecondTableViewCell.swift; path = Controllers/CustomViewCells/Books/BookSecondTableViewCell.swift; sourceTree = "<group>"; };
-		26CD85341F436B0000A9541A /* BookSecondTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BookSecondTableViewCell.xib; path = Controllers/CustomViewCells/Books/BookSecondTableViewCell.xib; sourceTree = "<group>"; };
 		26CD85391F436BDB00A9541A /* BookTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookTableViewController.swift; path = Controllers/NotGenerics/BookTableViewController.swift; sourceTree = "<group>"; };
 		26E314E31F36414700C9C3CF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		26E314EA1F36418500C9C3CF /* el-caballero-de-los-siete-reinos-67.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "el-caballero-de-los-siete-reinos-67.jpg"; sourceTree = "<group>"; };
@@ -185,7 +215,12 @@
 		264A705F1F3CF33B00016D05 /* NotGenerics */ = {
 			isa = PBXGroup;
 			children = (
+				2680A2EF1F4AEB17006F8EF1 /* AuthorListTableViewController.swift */,
+				2680A2F71F4AEF7D006F8EF1 /* AuthorTableViewController.swift */,
+				26786B0E1F49F51E00904815 /* BookListTableViewController.swift */,
 				26CD85391F436BDB00A9541A /* BookTableViewController.swift */,
+				2680A2FF1F4AF6EA006F8EF1 /* StartViewController.swift */,
+				2680A3001F4AF6EA006F8EF1 /* StartViewController.xib */,
 			);
 			name = NotGenerics;
 			sourceTree = "<group>";
@@ -193,8 +228,11 @@
 		264A70601F3CF34700016D05 /* CustomViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				2678DDF01F40C7CB0061D925 /* Author */,
 				2678DDEF1F40C7BD0061D925 /* Book */,
+				26786B061F49F28000904815 /* ListCustomTableViewCell.swift */,
+				26786B071F49F28000904815 /* ListCustomTableViewCell.xib */,
+				26AECB151F4ACA0600A3CCBA /* DescCustomTableViewCell.swift */,
+				26AECB161F4ACA0600A3CCBA /* DescCustomTableViewCell.xib */,
 			);
 			name = CustomViewCells;
 			sourceTree = "<group>";
@@ -211,17 +249,10 @@
 			children = (
 				2678DDEA1F40C7AD0061D925 /* BookFirstCustomTableViewCell.swift */,
 				2678DDEB1F40C7AD0061D925 /* BookFirstCustomTableViewCell.xib */,
-				26CD85331F436B0000A9541A /* BookSecondTableViewCell.swift */,
-				26CD85341F436B0000A9541A /* BookSecondTableViewCell.xib */,
+				261C1D491F45FD7800EB1A21 /* BookSecondCustomTableViewCell.swift */,
+				261C1D4A1F45FD7800EB1A21 /* BookSecondCustomTableViewCell.xib */,
 			);
 			name = Book;
-			sourceTree = "<group>";
-		};
-		2678DDF01F40C7CB0061D925 /* Author */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Author;
 			sourceTree = "<group>";
 		};
 		26CD85171F43569600A9541A /* Delegates */ = {
@@ -252,6 +283,8 @@
 		26E314E71F36418500C9C3CF /* Authors */ = {
 			isa = PBXGroup;
 			children = (
+				2680A2F11F4AED9B006F8EF1 /* George_RR_Martin.jpg */,
+				2680A2F21F4AED9B006F8EF1 /* Richard_Matheson.jpg */,
 			);
 			path = Authors;
 			sourceTree = "<group>";
@@ -259,6 +292,9 @@
 		26E314E81F36418500C9C3CF /* Company */ = {
 			isa = PBXGroup;
 			children = (
+				2680A2F91F4AF567006F8EF1 /* bookIcon.png */,
+				2680A2FA1F4AF567006F8EF1 /* logo_gigamesh.gif */,
+				2680A2FB1F4AF567006F8EF1 /* noAuthorPhoto.jpg */,
 			);
 			path = Company;
 			sourceTree = "<group>";
@@ -266,6 +302,7 @@
 		26E314E91F36418500C9C3CF /* Covers */ = {
 			isa = PBXGroup;
 			children = (
+				26786B121F4A00CC00904815 /* juego-de-tronos-28.jpg */,
 				26E314EA1F36418500C9C3CF /* el-caballero-de-los-siete-reinos-67.jpg */,
 			);
 			path = Covers;
@@ -364,12 +401,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2680A2FE1F4AF567006F8EF1 /* noAuthorPhoto.jpg in Resources */,
 				2624B6221F32647C005B9819 /* LaunchScreen.storyboard in Resources */,
+				26AECB181F4ACA0600A3CCBA /* DescCustomTableViewCell.xib in Resources */,
+				2680A2F41F4AED9B006F8EF1 /* Richard_Matheson.jpg in Resources */,
 				26E314EE1F36418500C9C3CF /* el-caballero-de-los-siete-reinos-67.jpg in Resources */,
+				2680A3021F4AF6EA006F8EF1 /* StartViewController.xib in Resources */,
+				2680A2FD1F4AF567006F8EF1 /* logo_gigamesh.gif in Resources */,
+				2680A2FC1F4AF567006F8EF1 /* bookIcon.png in Resources */,
+				26786B131F4A00CC00904815 /* juego-de-tronos-28.jpg in Resources */,
+				2680A2F31F4AED9B006F8EF1 /* George_RR_Martin.jpg in Resources */,
 				26E314EF1F36418500C9C3CF /* Authors.json in Resources */,
 				26E314F01F36418500C9C3CF /* Books.json in Resources */,
-				26CD85361F436B0000A9541A /* BookSecondTableViewCell.xib in Resources */,
+				261C1D4C1F45FD7800EB1A21 /* BookSecondCustomTableViewCell.xib in Resources */,
 				2678DDED1F40C7AD0061D925 /* BookFirstCustomTableViewCell.xib in Resources */,
+				26786B091F49F28000904815 /* ListCustomTableViewCell.xib in Resources */,
 				2624B61F1F32647C005B9819 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,14 +434,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2680A2F01F4AEB17006F8EF1 /* AuthorListTableViewController.swift in Sources */,
+				261C1D4B1F45FD7800EB1A21 /* BookSecondCustomTableViewCell.swift in Sources */,
 				26BFA9C11F37897E009EA30E /* Author.swift in Sources */,
 				2624B6181F32647C005B9819 /* AppDelegate.swift in Sources */,
-				26CD85351F436B0000A9541A /* BookSecondTableViewCell.swift in Sources */,
+				2680A2F81F4AEF7D006F8EF1 /* AuthorTableViewController.swift in Sources */,
+				2680A3011F4AF6EA006F8EF1 /* StartViewController.swift in Sources */,
 				26BFA9C31F378DF0009EA30E /* Book.swift in Sources */,
+				26786B081F49F28000904815 /* ListCustomTableViewCell.swift in Sources */,
+				26AECB171F4ACA0600A3CCBA /* DescCustomTableViewCell.swift in Sources */,
 				26CD853A1F436BDB00A9541A /* BookTableViewController.swift in Sources */,
 				26BFA9C71F3799EC009EA30E /* Repository.swift in Sources */,
 				2678DDEC1F40C7AD0061D925 /* BookFirstCustomTableViewCell.swift in Sources */,
 				264A70571F3CBFBF00016D05 /* UIKitExtensions.swift in Sources */,
+				26786B0F1F49F51E00904815 /* BookListTableViewController.swift in Sources */,
 				264A70591F3CBFDC00016D05 /* DateExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

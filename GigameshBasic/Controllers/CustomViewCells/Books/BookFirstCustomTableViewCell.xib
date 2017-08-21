@@ -6,37 +6,41 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="273" id="KGk-i7-Jjw" customClass="BookFirstCustomTableViewCell" customModule="GigameshBasic" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="273" id="KGk-i7-Jjw" customClass="BookFirstCustomTableViewCell" customModule="GigameshBasic" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="332" height="273"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="332" height="273"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="332" height="272.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LPu-dI-M5O" userLabel="Cover">
-                        <rect key="frame" x="83" y="7" width="166" height="260"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="juego-de-tronos-28.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LPu-dI-M5O" userLabel="image">
+                        <rect key="frame" x="75.5" y="2" width="180" height="270"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="LPu-dI-M5O" secondAttribute="height" multiplier="1:1.5" id="3Gy-cw-434"/>
+                            <constraint firstAttribute="height" constant="270" id="Y3g-v3-0NQ"/>
+                        </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="LPu-dI-M5O" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OwI-WY-8v9"/>
-                    <constraint firstItem="LPu-dI-M5O" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.5" id="Z9w-pw-l3M"/>
-                    <constraint firstItem="LPu-dI-M5O" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="f2i-v9-LoL"/>
-                    <constraint firstItem="LPu-dI-M5O" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="166:273" id="sLC-a1-nJQ"/>
-                    <constraint firstItem="LPu-dI-M5O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-0.89506172839594456" id="vhr-da-AiO"/>
+                    <constraint firstItem="LPu-dI-M5O" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerXWithinMargins" id="IGG-Lm-AJR"/>
+                    <constraint firstItem="LPu-dI-M5O" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerYWithinMargins" id="hrZ-RL-Zh9"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="coverImage" destination="LPu-dI-M5O" id="PBe-LN-W7v"/>
+                <outlet property="imageViewCell" destination="LPu-dI-M5O" id="I1w-yh-Voj"/>
             </connections>
             <point key="canvasLocation" x="31" y="63.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="juego-de-tronos-28.jpg" width="600" height="889"/>
+    </resources>
 </document>

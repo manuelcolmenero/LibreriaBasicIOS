@@ -23,18 +23,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = UIColor.orange
         
         // Se crean los modelos desde el repositorio
-//        let authors = Repository.local.authors
-        let books   = Repository.local.books
+        let authors   = Repository.local.authors
+        let books    = Repository.local.books
         
         // Se crean los controladores
-        var controllers = [UIViewController]()
-        for book in books {
-            controllers.append(BookTableViewController(model: book).wrappedInNavigation())
-        }
+        let authorsVC = AuthorListTableViewController(model: authors).wrappedInNavigation()
+        let booksVC   = BookListTableViewController(model: books).wrappedInNavigation()
+        let startVC   = StartViewController()
+        
+        // Se configuran los controladores
+        let authorsImg = resizeImage(image: #imageLiteral(resourceName: "noAuthorPhoto.jpg"), targetSize: CGSize(width: 25, height: 25))
+        authorsVC.tabBarItem  = UITabBarItem(title: "Autores" , image: authorsImg, selectedImage: nil)
+        
+        let booksImg = resizeImage(image: #imageLiteral(resourceName: "bookIcon.png"), targetSize: CGSize(width: 25, height: 25))
+        booksVC.tabBarItem    = UITabBarItem(title: "Catálogo", image: booksImg, selectedImage: nil)
+
+        let startImg = resizeImage(image: #imageLiteral(resourceName: "logo_gigamesh.gif"), targetSize: CGSize(width: 25, height: 25))
+        startVC.tabBarItem    = UITabBarItem(title: "Inicio", image: startImg, selectedImage: nil)
         
         // Se crea el UITabBarController
         let tabVC = UITabBarController()
-        tabVC.viewControllers = controllers
+        tabVC.viewControllers = [startVC, authorsVC, booksVC]
         
         
         // Se verifica en que tipo de dispositivo se está ejecutando la aplicación
@@ -50,10 +59,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.rootViewController = tabVC
         
-        
         return true
     }
-
+    
+    // MARK : - application func
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

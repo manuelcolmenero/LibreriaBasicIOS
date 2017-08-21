@@ -24,19 +24,22 @@ final class Author {
     let dateBorn      : Date
     let dateDied      : Date
     let nationality   : String
+    let photo         : Photo
     let bio           : String
+
     
     private var _books : Books
     
     
     init(id: Int,
-         firstName: String,
-         lastName: String,
-         alias: String,
-         dateBorn: Date,
-         dateDied: Date,
-         nacionality: String,
-         bio: String) {
+         firstName   : String,
+         lastName    : String,
+         alias       : String,
+         dateBorn    : Date,
+         dateDied    : Date,
+         nacionality : String,
+         photo       : Photo,
+         bio         : String) {
         self.id          = id
         self.firstName   = firstName
         self.lastName    = lastName
@@ -44,9 +47,20 @@ final class Author {
         self.dateBorn    = dateBorn
         self.dateDied    = dateDied
         self.nationality = nacionality
+        self.photo       = photo
         self.bio         = bio
-        
+
         _books = Books()
+    }
+    
+}
+
+final class Photo{
+    let description : String
+    let image       : UIImage
+    
+    init(image : UIImage, description : String) {
+        (self.image, self.description) = (image, description)
     }
     
 }

@@ -45,6 +45,10 @@ final class LocalFactory : AuthorFactory {
             
             // Authors
             
+            // Se crean los Covers
+            let GeorgeRRMartinPhoto    = Photo(image: #imageLiteral(resourceName: "George_RR_Martin.jpg"), description: "George R. R. Martin")
+            let RichardBMathesonPhoto  = Photo(image: #imageLiteral(resourceName: "Richard_Matheson.jpg"), description: "Richard Matheson")
+            
             let GeorgeRRMartin = Author(id: 1,
                                         firstName: "George",
                                         lastName: "Raymond Richard Martin",
@@ -52,6 +56,7 @@ final class LocalFactory : AuthorFactory {
                                         dateBorn: Date.getDateFromString("1948/09/20"),
                                         dateDied: Date.getDateFromString("9999/12/31"),
                                         nacionality: "Estadounidense",
+                                        photo: GeorgeRRMartinPhoto,
                                         bio: "George R. R. Martin nació en 1948 en Bayonne (Nueva Jersey, EE.UU.), y en la actualidad reside en Santa Fe (Nuevo México, EE.UU.). Hijo de un estibador de familia humilde, su anhelo por conocer los destinos exóticos de los navíos que veía zarpar de Nueva York fue uno de los motivos que lo impulsaron a escribir fantasía y ciencia ficción. Licenciado en periodismo en 1970, en 1977 publicó su primera novela, Muerte de la luz, libro de culto dentro del género y obra cumbre de la ciencia ficción romántica. Desde 1979 se dedica por completo a la escritura, y de su pluma han surgido títulos como Una canción para Lya o Sueño del Fevre, donde su prosa sugerente y poética aborda temas tan poco usuales en el género como la amistad, la lealtad, el amor o la traición, desde una perspectiva despojada de manierismos pero cargada de sensibilidad. Como antologista cabe destacar su trabajo a cargo de Wild Cards, antología de mundos compartidos con temática de superhéroes, de gran prestigio. A partir de 1986 escribe guiones y colabora en series televisivas como En los límites de la realidad o La bella y la bestia, además de realizar tareas de producción en diversos telefilmes. En 1996 empieza a publicar la serie de fantasía épica Canción de hielo y fuego, éxito de ventas en Estados Unidos y auténtico revulsivo del género fantástico.")
             let RichardBMatheson = Author(id: 2,
                                           firstName: "Richard",
@@ -60,6 +65,7 @@ final class LocalFactory : AuthorFactory {
                                           dateBorn: Date.getDateFromString("1926-02-20"),
                                           dateDied: Date.getDateFromString("2013-06-23"),
                                           nacionality: "Estadounidense",
+                                          photo: RichardBMathesonPhoto,
                                           bio: "Richard Burton Matheson nació en 1926 en Allendale (Nueva Jersey, EE.UU.) y creció en Brooklyn. Durante la Segunda Guerra Mundial luchó en Europa, donde resultó herido. En 1949 se licenció en periodismo por la Universidad de Misuri. Las dificultades laborales para ejercer su profesión determinaron su dedicación a la narrativa. En 1950 se publicó su primer relato, “Nacido de hombre y mujer”, en The Magazine of Fantasy & Science Fiction; cuatro años después, su primera novela fantástica, Soy leyenda, eludía clichés e incorporaba por primera vez una explicación racional al vampirismo. En 1956 llegó a un acuerdo con la Universal sobre los derechos cinematográficos de El hombre menguante con la condición de hacerse cargo de la adaptación, lo que marcó el comienzo de su carrera en la industria del cine y la televisión. Cabe destacar en este campo los catorce guiones que firmó para La dimensión desconocida, así como las adaptaciones de obras de Edgar Allan Poe para Roger Corman y de su cuento “Duelo” para la ópera prima de Steven Spielberg El diablo sobre ruedas. Residió en Los Ángeles desde 1951, donde falleció en el año 2013. A pesar de haber empezado escribiendo para pulps de ciencia ficción, Matheson fue abandonando los elementos más arquetípicos del género, con que dotaba de verosimilitud los terrores más dispares, para dar mayor relevancia a las características centrales de su obra: la irrupción de lo extraordinario en la realidad, la cotidianidad del miedo y la paranoia, y la angustia vital.")
             
             
@@ -96,9 +102,11 @@ final class LocalFactory : AuthorFactory {
             
             // Se cargan los autores
             let authorGRRMartin = Repository.local.author(named: "George")
+
             
             // Se crean los Covers
             let caballero7ReinosCover = Cover(image: #imageLiteral(resourceName: "el-caballero-de-los-siete-reinos-67.jpg"), description: "El caballero de los siete reinos")
+            let juegoDeTronosCover    = Cover(image: #imageLiteral(resourceName: "juego-de-tronos-28.jpg"), description: "Juego de tronos")
             
             // Se crean los Books
             
@@ -115,13 +123,32 @@ final class LocalFactory : AuthorFactory {
                                         cover: caballero7ReinosCover,
                                         description: "Las andanzas de un caballero de Poniente. Los tres primeros relatos de Dunk y Egg. Muchas son las historias que se cuentan sobre Aegon V el Improbable y ser Duncan el Alto, su leal comandante de la Guardia Real. Pero la magia y la épica de la leyenda esconden la verdadera naturaleza de los héroes: la determinación de un huérfano del Lecho de Pulgas que llegó a caballero, el arrojo de un príncipe que cambió la corte por los caminos y una amistad inquebrantable capaz de vencer intrigas, traiciones... y revueltas. Durante los reinados de Daeron II y Aerys I, cuando las heridas de la rebelión de los Fuegoscuro todavía estaban abiertas, tienen lugar las primeras aventuras de un caballero fornido y bonachón y de su escudero, un infante real, fiel y de fuerte temperamento. A medio camino entre la fantasía heroica y la novela de caballerías, El caballero de los Siete Reinos narra las peripecias de dos héroes bondadosos en una tierra despiadada. «En la tradición epicofantástica, Martin es el mejor con diferencia.» Time Magazine. El encuentro de dos héroes improbables que se ganaron el corazón de su pueblo. Dunk creció huérfano en los callejones del Lecho de Pulgas y salió adelante gracias a su corpulencia. Vivió en la calle hasta que ser Arlan del Árbol de la Moneda lo tomó a su servicio como escudero. Con él recorrió los Siete Reinos y, a pesar de su corto intelecto, aprendió la esencia, que no las muchas artes, de la caballería. Justo antes de morir, el viejo ser Arlan lo arma caballero, con la luna y las estrellas como únicos testigos. De modo que, con dos caballos y una espada por toda posesión, Dunk el Tocho, ahora ya ser Duncan, fía a su fuerza ganar alguna justa y embolsarse unas monedas, y sueña con llegar a ser un gran caballero. Pero hete aquí que un día tropieza en el camino con un niño insolente a quien acabará aceptando como escudero... Y así comienza la leyenda. Con tono ligero y un desarrollo ejemplar, El caballero de los Siete Reinos retoma algunos de los temas centrales de Canción de hielo y fuego, como la lealtad, la justicia y la reflexión sobre el poder, pero desde la perspectiva cotidiana de la gente común y de su incidencia en escenarios desprovistos de fasto y oropel. El autor crea dos de sus personajes más entrañables y nos presenta una época mítica y terrible, cuyos conflictos dejarán impronta en la historia de los Siete Reinos y acarrearán consecuencias en los hechos narrados a partir de Juego de tronos. Una puerta abierta a Poniente y un delicioso recordatorio de por qué nos cautiva Martin.")
             
-            return [caballero7Reinos].sorted()
+            let juegoDeTronos = Book(title: "Juego de tronos",
+                                        originalTitle: "A Game of Thrones",
+                                        authors: authorGRRMartin!,
+                                        format: "Tapa blanda",
+                                        pages: 800,
+                                        publicationDate: Date.getDateFromString("2010-12-24"),
+                                        collection: "Gigamesh Ficción",
+                                        idiom: "Español",
+                                        ISBN10: "8496208400",
+                                        ISBN13: "978-8496208407",
+                                        cover: juegoDeTronosCover,
+                                        description: "Tras el largo verano, el invierno se acerca a los Siete Reinos. Lord Eddard Stark, señor de Invernalia, deja sus dominios para unirse a la corte de su amigo el rey Robert Baratheon, llamado el Usurpador, hombre díscolo y otrora guerrero audaz cuyas mayores aficiones son comer, beber y engendrar bastardos. Eddard Stark ocupará el cargo de Mano del Rey e intentará desentrañar una maraña de intrigas que pondrá en peligro su vida y la de todos los suyos. En un mundo cuyas estaciones pueden durar decenios y en el que retazos de una magia inmemorial y olvidada surgen en los rincones más sombríos y maravillosos, la traición y la lealtad, la compasión y la sed de venganza, el amor y el poder hacen del juego de tronos una poderosa trampa que atrapará en sus fauces a los personajes... y al lector.")
+            
+            
+            return [caballero7Reinos, juegoDeTronos].sorted()
         }
     }
     
     // MARK: - Funtions - Books
     func book(named: String) -> Book? {
         let book = books.filter{$0.title.uppercased() == named.uppercased()}.first
+        return book
+    }
+    
+    func book(author: String) -> [Book]? {
+        let book = books.filter{$0.authors.fullName.uppercased() == author.uppercased()}
         return book
     }
     

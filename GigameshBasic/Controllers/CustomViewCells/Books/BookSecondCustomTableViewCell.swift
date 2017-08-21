@@ -1,16 +1,16 @@
 //
-//  BookSecondTableViewCell.swift
+//  BookSecondCustomTableViewCell.swift
 //  GigameshBasic
 //
-//  Created by Manuel Colmenero Navarro on 15/8/17.
+//  Created by Manuel Colmenero Navarro on 17/8/17.
 //  Copyright © 2017 Manuel Colmenero Navarro. All rights reserved.
 //
 
 import UIKit
 
-class BookSecondTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var infoLabel: UILabel!
+class BookSecondCustomTableViewCell: UITableViewCell {
+    @IBOutlet weak var literalText: UILabel!
+    @IBOutlet weak var dataText: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
