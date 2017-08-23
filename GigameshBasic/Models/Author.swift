@@ -12,9 +12,6 @@ import UIKit
 // Se crea una representación del modelo
 
 
-// MARK: - Typealias
-typealias Books = Set<Book>
-
 // MARK: - Clases
 final class Author {
     let id            : Int
@@ -27,10 +24,6 @@ final class Author {
     let photo         : Photo
     let bio           : String
 
-    
-    private var _books : Books
-    
-    
     init(id: Int,
          firstName   : String,
          lastName    : String,
@@ -50,7 +43,6 @@ final class Author {
         self.photo       = photo
         self.bio         = bio
 
-        _books = Books()
     }
     
 }
@@ -121,38 +113,3 @@ extension Author{
         }
     }
 }
-
-// MARK: - Extensión para Books
-extension Author{
-    
-    // Extension de propiedad
-    var count : Int{
-        return _books.count
-    }
-    
-    // Extension de método
-    func add(book: Book) {
-        
-        guard book.authors.fullName == fullName else {
-            return
-        }
-        
-        _books.insert(book)
-    }
-    
-    // Sobrecarga de funciones. Se crea la misma función con distintos parámetros
-    
-    // Los '...' quiere decir que puede recibir varios parámetros separados por comas.
-    func add(books: Book...){
-        for book in books{
-            add(book: book)
-        }
-    }
-    
-    // Sorted [Book]
-    // Se crea un metodo que devuelve un array de Book
-    func sortedBooks() -> [Book]{
-        return _books.sorted()
-    }
-}
-

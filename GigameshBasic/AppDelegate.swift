@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.backgroundColor = UIColor.orange
         
+        
+        // MODO LOCAL
         // Se crean los modelos desde el repositorio
         let authors   = Repository.local.authors
         let books    = Repository.local.books
@@ -44,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Se crea el UITabBarController
         let tabVC = UITabBarController()
         tabVC.viewControllers = [startVC, authorsVC, booksVC]
-        
+
         
         // Se verifica en que tipo de dispositivo se está ejecutando la aplicación
         
